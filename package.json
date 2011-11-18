@@ -1,14 +1,20 @@
 {
-  "author": "Richard Marr <richard.marr@gmail.com>",
-  "name": "filewatcher",
-  "description": "A simple EventEmitter that listens for file system changes in a given set of files or directories. Adapted from the Reload plugin in Learnboost's Cluster module",
-  "version": "0.0.1",
-  "repository": {
-    "url": ""
-  },
-  "engines": {
-    "node": "~0.6.1"
-  },
-  "dependencies": {},
-  "devDependencies": {}
+	"author": "Richard Marr <richard.marr@gmail.com>",
+	"name": "filewatcher",
+	"description": "A simple EventEmitter that listens for file system changes in a given set of files or directories. Attaches filesystem watchers then emits one event per change with the changed file as a param. Adapted from the Reload plugin in Learnboost's Cluster module",
+	"version": "0.0.1",
+	"main": "./index",
+	"repository" : {
+		"type" : "git",
+		"url" : "http://github.com/richmarr/filewatcher.git"
+	}, 
+	"bugs" : { "url" : "http://github.com/richmarr/filewatcher/issues" },
+	"engines": { "node": "~0.6.1" },
+	"dependencies": {},
+	"devDependencies": {
+		"nodeunit":"*"
+	},
+	"scripts": {
+		"test": "nodeunit test"
+	}
 }
