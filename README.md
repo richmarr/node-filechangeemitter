@@ -1,4 +1,5 @@
-Simple module that watches a given set of file system locations and 
+
+Simple module that watches a given set of file system locations and emits events when files are changed.
 
 Install
 -------
