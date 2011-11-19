@@ -1,2 +1,2 @@
 
-exports.FileWatcher = require('./lib/filewatcher').FileWatcher;
+exports.FileChangeEmitter = require('./lib/filechangeemitter').FileChangeEmitter;

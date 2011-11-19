@@ -1,6 +1,6 @@
 
 var testCase = require('nodeunit').testCase,
-	FileWatcher = require('../index').FileWatcher,
+	FileChangeEmitter = require('../index').FileChangeEmitter,
 	fs = require('fs');
 
 // This is run by nodeunit
@@ -9,7 +9,7 @@ module.exports = testCase({
 	// Make sure we're traversing the DOM as expected
 	testModify : function(test){
 	
-		var fw = new FileWatcher(['./test/data']);
+		var fw = new FileChangeEmitter(['./test/data']);
 		
 		fw.on('change',function(file){
 			test.ok(file);
