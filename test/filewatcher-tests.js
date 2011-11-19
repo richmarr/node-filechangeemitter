@@ -10,14 +10,15 @@ module.exports = testCase({
 	testModify : function(test){
 	
 		var fw = new FileWatcher(['./test/data']);
+		
 		fw.on('change',function(file){
-			test.ok();
+			test.ok(file);
 			test.done();
+			fw.close();
 		});
-		fs.write('./data/test-data.txt', new Buffer("test data"), 0, 9, 0, function(){
-			console.log(arguments)
-		});
-	
-	},
-	
+		
+		setTimeout(function(){
+			fs.writeFile('./test/data/test-data.txt', "test data");
+		},500);
+	}
 });
