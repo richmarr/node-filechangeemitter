@@ -2,7 +2,7 @@
 	"author": "Richard Marr <richard.marr@gmail.com>",
 	"name": "filechangeemitter",
 	"description": "A simple EventEmitter that listens for file system changes in a given set of files or directories. Attaches filesystem watchers then emits one event per change with the changed file as a param. Adapted from the Reload plugin in Learnboost's Cluster module",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "./index",
 	"repository" : {
 		"type" : "git",
